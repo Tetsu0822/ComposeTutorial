@@ -56,7 +56,7 @@ data class Message(val author: String, val body: String)
 @Composable
 fun MessageCard(msg: tw.com.donhi.composetutorial.Message) {
     // Add padding around our message
-    Row(modifier = Modifier.padding(all = 8.dp)) {
+    Row(modifier = Modifier.padding(start = 8.dp, top = 50.dp)) {
         Image(
             painter = painterResource(R.drawable.user),
             contentDescription = "Contact Profile picture",
